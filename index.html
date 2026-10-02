@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大乱闘クラッシュレーシング - 車両ガイド</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+    <header class="site-header">
+        <div class="header-container">
+            <!-- 中央: ゲーム名 -->
+            <div class="logo">大乱闘クラッシュレーシング</div>
+            <!-- 右: メニュー(横並び) -->
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#top">車両ガイド</a></li>
+                    <li><a href="#about">概要</a></li>
+                    <li><a href="#cars">車種</a></li>
+                    <li><a href="#spec">スペック表</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">名車6台を収録</span>
+            <h1>走りで選ぶ、あなたの一台。</h1>
+            <p>パワー・軽さ・ハンドリング・安定性。4つの項目で車の個性を比べよう。</p>
+            <a href="#cars" class="btn btn-primary">車種を見る</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <h2>この車両ガイドについて</h2>
+            <p>各車の性能を5段階で表示しています。数値が高いほど優秀です。コースや走り方に合わせて車を選びましょう。</p>
+        </section>
+
+        <section id="cars" class="section">
+            <h2>車種紹介</h2>
+
+            <div class="car-list">
+                <!-- 車1 -->
+                <article class="car">
+                    <img src="./images/01-fd3s.webp" alt="マツダ RX-7 FD3S">
+                    <h3>マツダ RX-7(FD3S)</h3>
+                    <p class="car-type">ロータリーターボ / 後輪駆動</p>
+                    <p>軽量ボディと低重心で、コーナーを鋭く曲がる。ロータリーエンジンの滑らかな吹け上がりが魅力。（個人的に一番好きな車です。FCも良き）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 4"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 4"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 5"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 3"></span></li>
+                    </ul>
+                </article>
+
+                <!-- 車2 -->
+                <article class="car">
+                    <img src="./images/02-bnr34.webp" alt="日産 スカイラインGT-R BNR34">
+                    <h3>日産 GT-R(BNR34)</h3>
+                    <p class="car-type">ツインターボ / 四輪駆動</p>
+                    <p>四輪駆動で高いトラクションを発揮。重さを力で押し切る、ハイパワーの王道マシン。（R35よりもR34派です。）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 5"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 2"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 5"></span></li>
+                    </ul>
+                </article>
+
+                <!-- 車3 -->
+                <article class="car">
+                    <img src="./images/03-ae86.webp" alt="トヨタ AE86">
+                    <h3>トヨタ AE86</h3>
+                    <p class="car-type">自然吸気 / 後輪駆動</p>
+                    <p>パワーは控えめだが、とにかく軽い。操る楽しさで勝負する、ドリフトの定番車。（ドライバーを育てる車）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 2"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 5"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 2"></span></li>
+                    </ul>
+                </article>
+
+                <!-- 車4 -->
+                <article class="car">
+                    <img src="./images/04-jza80.webp" alt="トヨタ スープラ JZA80">
+                    <h3>トヨタ スープラ(JZA80)</h3>
+                    <p class="car-type">ツインターボ / 後輪駆動</p>
+                    <p>直列6気筒ツインターボの太いトルクが武器。高速域での安定感はピカイチ。（90もいいけど僅差で80派、直線バケモンのイメージ）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 5"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 2"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 3"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 4"></span></li>
+                    </ul>
+                </article>
+
+                <!-- 車5 -->
+                <article class="car">
+                    <img src="./images/05-gc8.webp" alt="スバル インプレッサ WRX  GC8">
+                    <h3>スバル インプレッサ WRX STi(GC8)</h3>
+                    <p class="car-type">水平対向ターボ / 四輪駆動</p>
+                    <p>ラリーで鍛えられた四輪駆動。路面を選ばず、コーナーを力強く駆け抜ける。（スバルでは一番好き、ラリー見てほしい1998のとか）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 4"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 3"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 5"></span></li>
+                    </ul>
+                </article>
+
+                <!-- 車6 -->
+                <article class="car">
+                    <img src="./images/06-s30.webp" alt="日産 フェアレディZ S30">
+                    <h3>日産 フェアレディZ(S30)</h3>
+                    <p class="car-type">ターボ / 後輪駆動</p>
+                    <p>長いボンネットの初代Zが、首都高を駆け抜ける。（なんかしらんけどすぐ廃車になりそう）</p>
+                    <ul class="stats">
+                        <li>パワー <span class="bar" style="--v: 2"></span></li>
+                        <li>軽さ <span class="bar" style="--v: 4"></span></li>
+                        <li>ハンドリング <span class="bar" style="--v: 3"></span></li>
+                        <li>安定性 <span class="bar" style="--v: 3"></span></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="spec" class="section">
+            <h2>スペック比較表</h2>
+            <p class="note">数値は代表的なグレードの公称値です(Zは初期型のZ432の値)。</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>車種</th>
+                            <th>エンジン</th>
+                            <th>最高出力</th>
+                            <th>車重</th>
+                            <th>駆動</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RX-7(FD3S)</td>
+                            <td>13B-REW 2ローターターボ</td>
+                            <td>280 PS</td>
+                            <td>約1,280 kg</td>
+                            <td>FR</td>
+                        </tr>
+                        <tr>
+                            <td>GT-R(BNR34)</td>
+                            <td>RB26DETT 直6ツインターボ</td>
+                            <td>280 PS</td>
+                            <td>約1,540 kg</td>
+                            <td>4WD</td>
+                        </tr>
+                        <tr>
+                            <td>AE86</td>
+                            <td>4A-GE 直4 1.6L DOHC</td>
+                            <td>130 PS</td>
+                            <td>約940 kg</td>
+                            <td>FR</td>
+                        </tr>
+                        <tr>
+                            <td>スープラ(JZA80)</td>
+                            <td>2JZ-GTE 直6ツインターボ</td>
+                            <td>280 PS</td>
+                            <td>約1,500 kg</td>
+                            <td>FR</td>
+                        </tr>
+                        <tr>
+                            <td>インプレッサ WRX STi(GC8)</td>
+                            <td>EJ20 水平対向4気筒ターボ</td>
+                            <td>280 PS</td>
+                            <td>約1,250 kg</td>
+                            <td>4WD</td>
+                        </tr>
+                        <tr>
+                            <td>フェアレディZ(S30)</td>
+                            <td>S20 直6 2.0L DOHC</td>
+                            <td>160 PS</td>
+                            <td>約1,040 kg</td>
+                            <td>FR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 大乱闘クラッシュレーシング All Rights Reserved.</footer>
+
+</body>
+
+</html>
