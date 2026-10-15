@@ -14,7 +14,7 @@
     <header class="site-header">
         <div class="header-container">
             <!-- 中央: ゲーム名 -->
-            <div class="logo">大乱闘クラッシュレーシング</div>
+            <div class="logo"><a href="#top">大乱闘クラッシュレーシング</a></div>
             <!-- 右: メニュー(横並び) -->
             <nav class="site-nav">
                 <ul>
@@ -45,6 +45,7 @@
 
         <section id="cars" class="section">
             <h2>車種紹介</h2>
+            <p>エンジン音は全車共通ですスマソ（´・ω・｀）</p>
 
             <div class="car-list">
                 <!-- 車1 -->
@@ -52,13 +53,19 @@
                     <img src="./images/01-fd3s.webp" alt="マツダ RX-7 FD3S">
                     <h3>マツダ RX-7(FD3S)</h3>
                     <p class="car-type">ロータリーターボ / 後輪駆動</p>
-                    <p>軽量ボディと低重心で、コーナーを鋭く曲がる。ロータリーエンジンの滑らかな吹け上がりが魅力。（個人的に一番好きな車です。FCも良き）</p>
+                    <p>軽量ボディと低重心で、コーナーを鋭く曲がる。ロータリーエンジンの滑らかな吹け上がりが魅力。（個人的に一番好きな車です。FCもき）</p>
                     <ul class="stats">
                         <li>パワー <span class="bar" style="--v: 4"></span></li>
                         <li>軽さ <span class="bar" style="--v: 4"></span></li>
                         <li>ハンドリング <span class="bar" style="--v: 5"></span></li>
                         <li>安定性 <span class="bar" style="--v: 3"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-fd3s" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-fd3s').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-fd3s').pause()">停止</button>
+                    </div>
                 </article>
 
                 <!-- 車2 -->
@@ -73,6 +80,12 @@
                         <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
                         <li>安定性 <span class="bar" style="--v: 5"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-bnr34" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-bnr34').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-bnr34').pause()">停止</button>
+                    </div>
                 </article>
 
                 <!-- 車3 -->
@@ -87,6 +100,12 @@
                         <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
                         <li>安定性 <span class="bar" style="--v: 2"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-ae86" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-ae86').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-ae86').pause()">停止</button>
+                    </div>
                 </article>
 
                 <!-- 車4 -->
@@ -101,11 +120,17 @@
                         <li>ハンドリング <span class="bar" style="--v: 3"></span></li>
                         <li>安定性 <span class="bar" style="--v: 4"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-jza80" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-jza80').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-jza80').pause()">停止</button>
+                    </div>
                 </article>
 
                 <!-- 車5 -->
                 <article class="car">
-                    <img src="./images/05-gc8.webp" alt="スバル インプレッサ WRX  GC8">
+                    <img src="./images/05-gc8.webp" alt="スバル インプレッサ WRX STi GC8">
                     <h3>スバル インプレッサ WRX STi(GC8)</h3>
                     <p class="car-type">水平対向ターボ / 四輪駆動</p>
                     <p>ラリーで鍛えられた四輪駆動。路面を選ばず、コーナーを力強く駆け抜ける。（スバルでは一番好き、ラリー見てほしい1998のとか）</p>
@@ -115,20 +140,32 @@
                         <li>ハンドリング <span class="bar" style="--v: 4"></span></li>
                         <li>安定性 <span class="bar" style="--v: 5"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-gc8" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-gc8').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-gc8').pause()">停止</button>
+                    </div>
                 </article>
 
                 <!-- 車6 -->
                 <article class="car">
-                    <img src="./images/06-s30.webp" alt="日産 フェアレディZ S30">
-                    <h3>日産 フェアレディZ(S30)</h3>
+                    <img src="./images/06-s30.webp" alt="悪魔のZ(日産 フェアレディZ S30)">
+                    <h3>日産 フェアレディZ(S30)「悪魔のZ」</h3>
                     <p class="car-type">ターボ / 後輪駆動</p>
-                    <p>長いボンネットの初代Zが、首都高を駆け抜ける。（なんかしらんけどすぐ廃車になりそう）</p>
+                    <p>『湾岸ミッドナイト』でアキオが乗る一台。長いボンネットの初代Zが、首都高を駆け抜ける。（なんかしらんけどすぐ廃車になりそう）</p>
                     <ul class="stats">
                         <li>パワー <span class="bar" style="--v: 2"></span></li>
                         <li>軽さ <span class="bar" style="--v: 4"></span></li>
                         <li>ハンドリング <span class="bar" style="--v: 3"></span></li>
                         <li>安定性 <span class="bar" style="--v: 3"></span></li>
                     </ul>
+                    <div class="engine-sound">
+                        <p>エンジン音</p>
+                        <audio id="audio-s30" preload="none" src="./sounds/turbo.mp3"></audio>
+                        <button class="sound-btn" onclick="document.getElementById('audio-s30').play()">再生</button>
+                        <button class="sound-btn" onclick="document.getElementById('audio-s30').pause()">停止</button>
+                    </div>
                 </article>
             </div>
         </section>
@@ -196,7 +233,10 @@
         </section>
     </main>
 
-    <footer>&copy; 2026 大乱闘クラッシュレーシング All Rights Reserved.</footer>
+    <footer>
+        <p>ターボ音の借用元:<a href="https://pixabay.com/" target="_blank" rel="noopener">https://pixabay.com/</a></p>
+        <p>&copy; 2026 大乱闘クラッシュレーシング All Rights Reserved.</p>
+    </footer>
 
 </body>
 

@@ -2,8 +2,8 @@
 /* 全体の設定 */
 /* --------------------- */
 :root {
-    --primary-color: #ff2727;
-    --secondary-color: #2433ff;
+    --primary-color: #ff2020;
+    --secondary-color: #3834ff;
     --accent-color: #ffb703;
     --bg-color: #faf9fe;
     --text-color: #2b2d42;
@@ -68,6 +68,12 @@ img {
     color: var(--primary-color);
 }
 
+/* ゲーム名のリンク: 色は変えず、下線も付けない */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .site-nav {
     grid-column: 3;
     justify-self: end;
@@ -117,9 +123,9 @@ img {
 .badge {
     background-color: var(--accent-color);
     color: var(--text-color);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 0.2rem 1.1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -158,6 +164,10 @@ img {
     margin-bottom: 1.5rem;
 }
 
+#about p {
+    font-size: 1.1rem;
+}
+
 /* --------------------- */
 /* 車種カード */
 /* --------------------- */
@@ -168,6 +178,8 @@ img {
 }
 
 .car {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white);
     border-radius: 12px;
     padding: 1.2rem;
@@ -186,6 +198,7 @@ img {
 
 .car h3 {
     font-size: 1.3rem;
+    min-height: 3.2em;
 }
 
 .car-type {
@@ -200,7 +213,9 @@ img {
 /* --------------------- */
 .stats {
     list-style: none;
-    margin-top: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     display: grid;
     gap: 0.5rem;
 }
@@ -227,6 +242,37 @@ img {
     width: calc(var(--v) / 5 * 100%);
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 5px;
+}
+
+/* --------------------- */
+/* エンジン音 */
+/* --------------------- */
+.engine-sound {
+    margin-top: 0;
+    padding-top: 0.8rem;
+    border-top: 1px solid #e4def0;
+}
+
+.engine-sound p {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
+}
+
+.sound-btn {
+    padding: 0.4rem 1.2rem;
+    margin-right: 0.4rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--text-color);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sound-btn:hover {
+    opacity: 0.85;
 }
 
 /* --------------------- */
@@ -265,6 +311,10 @@ footer {
     font-size: 0.85rem;
     background-color: var(--text-color);
     color: var(--white);
+}
+
+footer a {
+    color: var(--accent-color);
 }
 
 /* スマホ向け: ゲーム名を上、メニューを下に縦並びにする */
